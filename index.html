@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+    
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <form id="formulario" action="">
+
+            <div class="container-formulario">
+
+                <div class="formulario-inputs">
+                    <label for="formulario">Usuario</label>
+                    <input type="text" name="Usuario" id="Usuario">
+                    <div class="formulario-imagenes" id="Usuario-img">
+                        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="" height="20px" width="20px">
+                        <img src="https://cdn-icons-png.flaticon.com/512/190/190406.png" alt="" height="20px" width="20px">
+                    </div>
+              
+                    <p class="campoErrores" id="campoErrores1">Tu usuario debe ser mayor o igual a 4 caracteres, puede contener números</p>
+                </div>
+
+                <div class="formulario-inputs">
+                    <label for="formulario">Nombres</label>
+                    <input type="text" name="Nombres" id="Nombres">
+                    <div class="formulario-imagenes" id="Nombres-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="" height="20px" width="20px">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190406.png" alt="" height="20px" width="20px">   
+                    </div>
+                    
+                    <p class="campoErrores" id="campoErrores2">Tu nombre no puede contener caracteres especiales</p>
+                </div>
+
+                <div class="formulario-inputs">
+                    <label for="formulario">Contraseña</label>
+                    <input type="password" name="Contraseña" id="Contraseña">
+                    <div class="formulario-imagenes" id="Contraseña-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="" height="20px" width="20px">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190406.png" alt="" height="20px" width="20px">   
+                    </div>
+                    
+                    <p class="campoErrores" id="campoErrores3">Tu contraseña debe ser minimo de 4 caracteres númericos y máximo de 12 caracteres</p>
+                </div>
+                
+                <div class="formulario-inputs">
+                    <label for="formulario">Repetir contraseña</label>
+                    <input type="password" name="Contraseña2" id="Contraseña2">
+                    <div class="formulario-imagenes" id="Contraseña2-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="" height="20px" width="20px">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190406.png" alt="" height="20px" width="20px">   
+                    </div>
+                    
+                    <p class="campoErrores" id="campoErrores4">La contraseña ingresada no coincide con la digitada incialmente</p>
+                </div>
+
+                <div class="formulario-inputs">
+                    <label for="formulario">Correo electronico</label>
+                    <input type="email" name="email" id="email" >
+                    <div class="formulario-imagenes" id="email-img">
+                        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="" height="20px" width="20px">
+                        <img src="https://cdn-icons-png.flaticon.com/512/190/190406.png" alt="" height="20px" width="20px">
+                    </div>
+                    <p class="campoErrores" id="campoErrores5">Correo no valido</p>
+                </div>
+
+                <div class="formulario-inputs">
+                    <label for="formulario">Número de celular</label>
+                    <input type="text" name="Celular" id="Celular">
+                    <div class="formulario-imagenes" id="Celular-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="" height="20px" width="20px">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190406.png" alt="" height="20px" width="20px">   
+                    </div>
+                    
+                    <p class="campoErrores" id="campoErrores6">Tu número de celular debe tener al menos 10 numeros</p>
+                </div>
+
+            </div>
+
+            
+            <div class="formulario-envio">
+                <div class="formulario-checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <p id="campoInformativo">Acepto terminos y condiciones</p>                    
+                </div>
+                <button type="submit">Enviar</button>
+                <img src="https://cdn-icons-png.flaticon.com/512/159/159469.png" alt="">
+                <p id="campoErroresValue">Debes revisar los campos no validos, para que puedas enviar el formulario</p>
+            </div>
+
+
+        </form>      
+    </div>
+
+
+    
+    <script src="/scripts.js"></script>
+    <!--<script src="/scripts.js"></script>-->
+</body>
+</html>
